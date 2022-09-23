@@ -142,6 +142,7 @@ func handleUpload(w http.ResponseWriter, r *http.Request) {
 		// get location where the file is uploaded to
 		fileLocation := filepath.Join(dir, "files", filename)
 		targetFile, targetFileErr := os.OpenFile(fileLocation, os.O_WRONLY|os.O_CREATE, 0666)
+		fmt.Println(fileLocation)
 		defer func() {
 			err = targetFile.Close()
 			if err != nil {
