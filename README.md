@@ -8,6 +8,7 @@ How to run this program
 3. open localhost:2345 on your browser
 
 ### with goland ide
+0. Clone this repository
 1. Select get from VCS
 2. Insert this repo url
 3. comment ```	var addr = "0.0.0.0:8000"``` and uncomment ```var addr = "localhost:8000"```
